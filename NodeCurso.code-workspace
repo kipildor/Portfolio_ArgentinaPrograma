@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../Argentina_Programa/bootstrap-5.1.3/scss"
+		},
+		{
+			"path": "../../Argentina_Programa/Portfolio01"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Argentina_Programa/PlantillasPortfolio/blk-design-system-angular-master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ProyWeb"
+	}
+}
