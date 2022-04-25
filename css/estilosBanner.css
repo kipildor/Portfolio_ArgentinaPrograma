@@ -1,0 +1,13 @@
+.carousel-item{
+    height: 350px;
+}
+
+div#profile-background {
+    display: flex;
+    /*z-index: 1;*/
+    max-height: 300px;
+}
+div#profile-background img {
+    width: 100%;
+    border-radius: 32px 32px 0 0;
+}

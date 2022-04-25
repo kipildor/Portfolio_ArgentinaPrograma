@@ -1,0 +1,98 @@
+
+html{
+    font-size: 15px;
+}
+body{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    background-color: blueviolet;
+}
+
+.contPP{
+    background-color: aqua;
+}
+/* Banner junto a la ficha de Acerca de mi */
+.mat-card {
+    border-radius: 32px;
+    /*margin: 20px 10px;*/
+    margin: 20px 0px;
+    padding: 10px;
+    border-color: #0a66c2;
+}
+
+.ficha {
+    padding: 16px;
+}
+/*
+ul.items-list {
+    list-style: none inside;
+}
+ul.items-list li {
+    display: flex;
+    margin: 10px 0;
+}
+ul.items-list li div.data-container {
+    flex-grow: 1;
+}
+ul.items-list li div.data-container a {
+    display: flex;
+    color: black;
+}
+*/
+.btn-edit {
+    /*float: left;*/
+}
+
+.limpiarFloat {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+/*
+.acerca{
+    background-color: grey;
+}
+.contMiFoto{
+    text-align: center;
+}
+.miFoto{
+    max-width: 200px;
+    max-height: 200px;
+    padding: 1rem;
+    
+}
+.contMiTexto{
+    padding: 1rem;
+}
+.lista-sin-punto{
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+}
+.cont-img-experiencia, .cont-img-educacion{
+    text-align: center;
+}
+.logo1{
+    max-height: 5rem;
+}
+.logo2{
+    max-height: 5rem;
+}
+*/
+
+
+
+
+
+.centrar-h{
+    padding-left: 5rem;
+}
+

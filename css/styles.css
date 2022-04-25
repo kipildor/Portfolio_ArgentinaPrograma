@@ -1,0 +1,29 @@
+
+
+
+
+
+ul.items-list {
+    list-style: none inside;
+}
+ul.items-list li {
+    display: flex;
+    margin: 10px 0;
+}
+ul.items-list li div.data-container {
+    flex-grow: 1;
+}
+ul.items-list li div.data-container a {
+    display: flex;
+    color: black;
+}
+
+
+
+.btn-edit {
+    float: left;
+}
+
+.limpiarFloat {
+    clear: both;
+}
