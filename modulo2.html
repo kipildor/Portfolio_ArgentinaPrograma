@@ -17,6 +17,7 @@
     <link href="css/misEstilos_01.css" rel="stylesheet" type="text/css" >
     <link href="css/estilosEncabezado.css" rel="stylesheet" type="text/css" >
     <link href="css/estilosBanner.css" rel="stylesheet" type="text/css" >
+    <link href="css/estilosMisDatos.css" rel="stylesheet" type="text/css" >
     <link href="css/estilosAcercaDeMi.css" rel="stylesheet" type="text/css" >
     <link href="css/estilosExpLaboral.css" rel="stylesheet" type="text/css" >
     <link href="css/estilosEducacion.css" rel="stylesheet" type="text/css" >
@@ -106,19 +107,22 @@
         <div id="info-img">
           <img class="profile-image" src="images/MiFotoCirculo.png" />
           <div class="btn-edit btn-edit-foto">
-            <a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
+            <a href="#" class="btn-right" title="Modificar Foto de Perfil"><i class="fa fa-pen"></i></a>
           </div>
         </div>
         <div class="limpiarFloat"></div>
         <div id="info-data" class="kcol-xl-4">
           <div>
-            <h1>Leandro Quipildor</h1>
+            <h1 class="tituloFicha">Leandro Quipildor</h1>
             <div id="info-titulo">Programador | Profesor de Informática</div>
             <div id="info-company">Desempleado</div>
             <div id="info-contact">
               <span>Buenos Aires (Argentina)</span>
-              <span><a href="#">Información de contacto</a></span>
+              <!--<span><a href="#">Información de contacto</a></span>-->
             </div>
+          </div>
+          <div class="btn-edit btn-edit-info">
+            <a href="#" class="btn-right" title="Modificar mis Datos"><i class="fa fa-pen"></i></a>
           </div>
           <ul id="info-details" class="kcol-xl-8">
             <li>
@@ -139,7 +143,7 @@
         </div>
         <div id="info-actions" class="">
           <button type="button" class="btn btn-primary">
-            Tengo interes en
+            Contactarme...
           </button>
           <button type="button" class="btn btn-light">Añadir sección</button>
           <button type="button" class="btn btn-light">Más</button>
@@ -147,20 +151,63 @@
       </div>
     </div>
 
-    <div class="card mat-card">
-      <div class="card-titles">
-        <h2>Acerca de</h2>
-        <div class="btn-edit" onclick="cambiar_parrafo()">
+    <div class="card mat-card" id="second-card">
+      <div id="fichaAcercaDeMi" class="ficha">
+        <h1 class="tituloFicha">Acerca de mi...  </h1>
+<!--
+        <div class="btn-edit lapizALaDerecha" onclick="cambiar_parrafo()">
           <a href="#" class="btn-right">
             <i class="fa fa-pen"></i>
           </a>
         </div>
+-->
+<!--
       </div>
       <div>
-        <p id="text-acercade">
-          Entusiasta de la informática y profesor todavía sin ejercer
-        </p>
+-->
+        <div id="contResumenAcercaDeMi">
+          <p id="text-acercaDeMi-1" class="text-acercaDeMi">
+            Entusiasta de la informática y profesor todavía sin ejercer.
+          </p>
+          <div class="btn-edit lapizAlLado" onclick="cambiar_parrafo()">
+            <a href="#" class="btn-right" title="Modificar Resumen Sobre Mi...">
+              <i class="fa fa-pen"></i>
+            </a>
+          </div>
+        </div>
+<!--
+        <div id="contParrafosAcercaDeMi" class="contParrafosAcercaDeMi" >
+          <div id="text-acercaDeMi-2" class="contIndividual-P">
+            <p id="" class="text-P-acercaDeMi">
+              Disfruto de programar, pero dentro de la programación tengo preferencia por el Backend,
+              me gusta esa sensación que se tiene al conseguir que funcione algo que después de varios intentos probando 
+              distintos códigos, aunque a veces puede ser frustrante tardar en conseguir esa solución.
+            </p>
+            <div class="btn-edit lapizAlLado" onclick="cambiar_parrafo()">
+              <a href="#" class="btn-right" title="Modificar Párrafo Sobre Mi...">
+                <i class="fa fa-pen"></i>
+              </a>
+            </div>
+            <div class="btn-delete lapizAlLado" onclick="cambiar_parrafo()">
+              <a href="#" class="btn-right" title="Eliminar Párrafo...">
+                <i class="far fa-trash-alt"></i>
+              </a>
+            </div>
+          </div>
+
+
+          <p id="" class="text-acercaDeMi">
+            Me recibí de Profesor de Informática hace poco y todavía no comencé a ejercer, estoy haciendo cursos 
+            para poder subir puntaje y empezar a realizar suplencias.
+          </p>
+          <p id="" class="text-acercaDeMi">
+            Otra cosa que disfruto, y comparto con mi novia, es viajar por mi pais (aunque también tengo ganas de conocer 
+            Brasil), y disfrutar de las comidas tradicionales de cada provincia o ciudad. 
+          </p>
+        </div>
+-->
       </div>
+<!--
       <div>
         <input
           id="edit-acercade"
@@ -169,6 +216,7 @@
           style="display: none"
         />
       </div>
+-->
     </div>
 
     <input type="file" id="file1" onChange="showFile(this)" />
