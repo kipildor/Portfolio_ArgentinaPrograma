@@ -1,0 +1,13 @@
+
+
+.contBloquesSkill {
+    margin-top: 0.5rem;
+}
+.contIndividual-skill {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.contInfo-skill {
+
+}
