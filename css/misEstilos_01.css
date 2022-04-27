@@ -69,6 +69,8 @@ ul.items-list li div.data-container a {
     /*float: left;*/
     /*padding-top: 1rem;*/
     padding-left: 1rem;
+    display: block;
+    
 }
 
 .limpiarFloat {
@@ -76,48 +78,8 @@ ul.items-list li div.data-container a {
 }
 
 
-
-
-
-
-
-
-/*
-.acerca{
-    background-color: grey;
-}
-.contMiFoto{
+.centrar-h_ {
+    /*padding-left: 5rem;*/
     text-align: center;
-}
-.miFoto{
-    max-width: 200px;
-    max-height: 200px;
-    padding: 1rem;
-    
-}
-.contMiTexto{
-    padding: 1rem;
-}
-.lista-sin-punto{
-    list-style-type: none;
-    margin-bottom: 1.5rem;
-}
-.cont-img-experiencia, .cont-img-educacion{
-    text-align: center;
-}
-.logo1{
-    max-height: 5rem;
-}
-.logo2{
-    max-height: 5rem;
-}
-*/
-
-
-
-
-
-.centrar-h{
-    padding-left: 5rem;
 }
 
