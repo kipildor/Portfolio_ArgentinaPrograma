@@ -11,8 +11,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <!-- Estilos de barra de progreso circular -->
-    <link href="css/barrasDeProgreso.css" rel="stylesheet">
+    <!-- Estilos de barra de progreso circular 
+    <link href="css/barrasDeProgreso.css" rel="stylesheet">-->
     <!-- Mis estilos CSS -->
     <link href="css/normalize.css" rel="stylesheet" type="text/css" >
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -365,9 +365,10 @@
     <div class="card mat-card" id="fourth-card">
       <div id="fichaEducacion" class="ficha">
         <h1 class="tituloFicha tituloSkill">Habilidades / Conocimiento  <a href="#" class="btn-plus" title="Agregar Habilidad o Conocimiento" ><i class="fas fa-plus-circle"></i></a> </h1>
-        <div id="contBloquesSkill" class="contBloquesSkill" >
+        <!--<div id="contBloquesSkill" class="contBloquesSkill" >-->
+          
+<!--
           <div id="text-skill-2" class="contIndividual-skill">
-
 
             <div class="col-md-4 centrar-h">
               <div class="progress yellow"> <span class="progress-left"> <span class="progress-bar"></span> </span> <span class="progress-right"> <span class="progress-bar"></span> </span>
@@ -413,22 +414,99 @@
               </div>
             </div>
           </div>
+-->          
+
+<!-- Barras de progreso rectas -->
+          <div class="container">
+            <div class="row col-md-12">
+              <div id="contBloquesSkill" class="contBloquesSkill col-md-6">
+                <div class="contIndividual-skill ">
+                  <div class="contInd-skill-izq col-md-8">
+                    <h3 class="progress-title">HTML5</h3>
+                    <div class="progress-outer">
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-danger" style="width:90%;"></div>
+                        
+                        <div class="progress-value"><span>90</span>%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contBtn-skill col-sm-1 centrar-h col-md-2">
+                    <div class="btn-edit lapizAlLado" onclick="cambiar_parrafo()">
+                      <a href="#" class="btn-right" title="Modificar Habilidad / Conocimiento...">
+                        <i class="fa fa-pen"></i>
+                      </a>
+                    </div>
+                    <div class="btn-delete lapizAlLado" onclick="cambiar_parrafo()">
+                      <a href="#" class="btn-right" title="Eliminar Habilidad / Conocimiento...">
+                        <i class="far fa-trash-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div claass="contIndividual-skill">
+                  <div class="contInd-skill-izq">
+                    <h3 class="progress-title">PHP</h3>
+                    <div class="progress-outer">
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-danger" style="width:80%;"></div>
+                        
+                        <div class="progress-value"><span>80</span>%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contBtn-skill col-sm-1 centrar-h">
+                    <div class="btn-edit lapizAlLado" onclick="cambiar_parrafo()">
+                      <a href="#" class="btn-right" title="Modificar Habilidad / Conocimiento...">
+                        <i class="fa fa-pen"></i>
+                      </a>
+                    </div>
+                    <div class="btn-delete lapizAlLado" onclick="cambiar_parrafo()">
+                      <a href="#" class="btn-right" title="Eliminar Habilidad / Conocimiento...">
+                        <i class="far fa-trash-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
 
-        </div>
+
+              </div>
+            </div>
+          </div>
+
+        <!--</div>-->
     
       </div>
     </div>
     
         <input type="file" id="file1" onChange="showFile(this)" />
 
-    </div>
+    </div><!-- Fin del contPP , está mal indentado  -->
 
     <script
       src="https://kit.fontawesome.com/55d8f7505d.js"
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.progress-value > span').each(function(){
+      $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+      },{
+        duration: 1500,
+        easing: 'swing',
+        step: function (now){
+          $(this).text(Math.ceil(now));
+        }
+      });
+    });
+  });
+</script>
 
     <script>
       function cambiar_parrafo() {
