@@ -361,8 +361,8 @@
 
     </div>
 
-    <!-- Ficha Skill's -->
-    <div class="card mat-card" id="fourth-card">
+<!-- Ficha Skill's -->
+    <div class="card mat-card" id="fifth-card">
       <div id="fichaEducacion" class="ficha">
         <h1 class="tituloFicha tituloSkill">Habilidades / Conocimiento  <a href="#" class="btn-plus" title="Agregar Habilidad o Conocimiento" ><i class="fas fa-plus-circle"></i></a> </h1>
         <!--<div id="contBloquesSkill" class="contBloquesSkill" >-->
@@ -417,12 +417,11 @@
 -->          
 
 <!-- Barras de progreso rectas -->
-          <div class="container">
-            <div class="row col-md-12">
-              <div id="contBloquesSkill" class="contBloquesSkill col-md-6">
-                <div class="contIndividual-skill ">
-                  <div class="contInd-skill-izq col-md-8">
-                    <h3 class="progress-title">HTML5</h3>
+          
+              <div id="contBloquesSkill" class="contBloquesSkill col-md-12">
+                <div class="contIndividual-skill row">
+                  <div class="contInd-skill-izq col-md-6">
+                    <h3 class="progress-title">HTML5 </h3>
                     <div class="progress-outer">
                       <div class="progress">
                         <div class="progress-bar progress-bar-striped progress-bar-danger" style="width:90%;"></div>
@@ -431,7 +430,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="contBtn-skill col-sm-1 centrar-h col-md-2">
+                  <div class="contBtn-skill col-sm-1 centrar-h_ col-md-1">
                     <div class="btn-edit lapizAlLado" onclick="cambiar_parrafo()">
                       <a href="#" class="btn-right" title="Modificar Habilidad / Conocimiento...">
                         <i class="fa fa-pen"></i>
@@ -444,9 +443,11 @@
                     </div>
                   </div>
                 </div>
+                
+                <hr class="separadorSkill" />
 
-                <div claass="contIndividual-skill">
-                  <div class="contInd-skill-izq">
+                <div class="contIndividual-skill row">
+                  <div class="contInd-skill-izq col-md-6">
                     <h3 class="progress-title">PHP</h3>
                     <div class="progress-outer">
                       <div class="progress">
@@ -456,7 +457,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="contBtn-skill col-sm-1 centrar-h">
+                  <div class="contBtn-skill col-sm-2 centrar-h_ col-md-2">
                     <div class="btn-edit lapizAlLado" onclick="cambiar_parrafo()">
                       <a href="#" class="btn-right" title="Modificar Habilidad / Conocimiento...">
                         <i class="fa fa-pen"></i>
@@ -470,18 +471,27 @@
                   </div>
                 </div>
 
-
-
               </div>
-            </div>
-          </div>
+           
 
         <!--</div>-->
     
       </div>
     </div>
+
+<!-- Ficha Proyectos -->
+    <div class="card mat-card" id="sixth-card">
+      <div id="fichaProyectos" class="ficha">
+        <h1 class="tituloFicha tituloProyectos">Mis Proyectos  <a href="#" class="btn-plus" title="Agregar Proyecto..." ><i class="fas fa-plus-circle"></i></a> </h1>
+
+        <div id="contBloquesProyectos" class="contBloquesProyectos" >
+
+        
+        </div>
+      </div>
+    </div>
     
-        <input type="file" id="file1" onChange="showFile(this)" />
+        <!--<input type="file" id="file1" onChange="showFile(this)" />-->
 
     </div><!-- Fin del contPP , está mal indentado  -->
 
